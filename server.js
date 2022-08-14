@@ -13,21 +13,21 @@ require('dotenv').config()
 
 let db,//asigned globaly ie useable anywhere only in this file
     dbConnectionStr = process.env.DB_STRING,
-    dbName = 'todo'
-
-//Initialize the connection to MongoDB; it returns a promise! if you don't have the string
+    dbName = 'todo' vvvvvvvv             z  
+k 
+//Initialize the connection to MongoDB; it returns a promise! if you don't have the string mongodb+srv://planBRandom:<password>@cluster0.1nhjpao.mongodb.net/?retryWrites=true&w=majority
     MongoClient.connect(dbConnectionStr, { useUnifiedTopology: true })
     //Handling a succesfully resolved promise and printing to the console
     .then(client => {
         console.log(`Connected to ${dbName} Database`)
-         //assinging the connected client instance, attached to the 'todo' collection to the 'db' variable 
-        db = client.db(dbName)
-    })
-    //lets not forget to add a catch
+         //assinging the connected client instance, attached to thce 'todo' collection to the 'db' variable 
+        db = client.db(dbName)0000000000000000
+    })        0                  XXxX nmnnm                   
+    //lets not forget to add a catchz
     .catch(error => console.error(error))
-    
-//Telling express that whenever we pass a render method, we use EJS
-app.set('view engine', 'ejs')
+       g ffffffffffffffffffffffffffffffffffff
+//Telling express that whenever we pass a render method, we use  EJSzzxczzcc
+app.set('view engine', 'ejs') cccxzz
 //Anything that is in the 'public' folder, just serve it up as is!
 app.use(express.static('public'))
 //Middleware - allows data to be passed to server via request
